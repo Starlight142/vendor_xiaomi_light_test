@@ -1,0 +1,67 @@
+{
+    "version": "1.0",
+    "product": "light",
+    "support": {
+            "lmkd_cammode_enable": false,
+            "adj_swap_support": true
+        },
+
+	 "threshold_4Gmem": {
+            "lowerAdj_freeMem_threshold": 614400,
+            "cam_boost_threshold": 2097152,
+            "3rdcam_boost_threshold": 2097152,
+            "adj_threshold": 800,
+            "lowAdj_threshold": 201,
+            "3rd_lowAdj_threshold": 701,
+            "update_state_delay_ms": 6000,
+            "kill_lowprio_sysapp_threshlod": 0,
+            "intercept_restart_time": 5000,
+            "kill_highprio_sysapp_threshlod": 0,
+            "skip_task_lower": 1,
+            "protect_locktask_num": 0,
+            "kill_tag": 1,
+            "skip_task":3
+        },
+
+    "configs_4Gmem": [
+               {
+
+            "name": "white_list",
+            "config": [
+                "com.android.camera",
+                "android.process.media",
+                "com.miui.gallery",
+                "com.tencent.mm",
+                "com.miui.home",
+                "com.android.traceur",
+                "com.tencent.mm:push",
+                "com.tencent.mobileqq:MSF",
+                "com.ss.android.lark.kami:wschannel",
+                "com.phonetest.application:CameraMemoryWatcher",
+                "com.phonetest.application",
+                "android.camera.cts",
+                "android.camera.cts:errorLoggingServiceProcess",
+                "com.google.android.googlequicksearchbox:search",
+                "com.google.android.gms",
+                "com.miui.securitycenter:ui",
+                "com.android.managedprovisioning"
+            ]
+        }
+    ],
+  "configs_6Gmem": [
+               {
+            "name": "white_list",
+            "config": [
+                "com.android.camera",
+                "com.miui.gallery",
+                "com.tencent.mm",
+                "com.miui.home",
+                "com.tencent.mm:push",
+                "com.tencent.mobileqq:MSF",
+                "com.ss.android.lark.kami:wschannel",
+                "com.phonetest.application:CameraMemoryWatcher",
+                "com.android.managedprovisioning"
+            ]
+        }
+    ]
+}
